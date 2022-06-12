@@ -5,8 +5,7 @@ class WalletConnectApi {
   const WalletConnectApi();
   static const _channel = MethodChannel('startActivity/walletConnect');
 
-  static WalletConnectApi create() =>
-      const WalletConnectApi()..initializeWallet();
+  static WalletConnectApi create() => const WalletConnectApi();
 
   Future<WalletConnectModel> initializeWallet() async {
     final response = await _channel.invokeMethod('initializeWallet');

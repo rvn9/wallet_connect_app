@@ -12,7 +12,8 @@ class WalletConnectBloc extends Bloc<WalletConnectEvent, WalletConnectState> {
   final WalletConnectApi _walletConnectApi;
 
   static WalletConnectBloc create(BuildContext context) =>
-      WalletConnectBloc(WalletConnectApi.create());
+      WalletConnectBloc(WalletConnectApi.create())
+        ..add(const WalletConnectEvent.initializeWallet());
 
   WalletConnectBloc(this._walletConnectApi)
       : super(const WalletConnectState.initial()) {
