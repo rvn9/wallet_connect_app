@@ -1,16 +1,5 @@
 # wallet_connect_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To use the app run main.dart. <br>
+The wallet app hasn't fully complete, it's alredy able to import the WalletConnectV2 app but failed to initialize connection to WalletConnectV2 or calling other method from WalletConnectV2. The method channel alredy able to call the invoke method from dart to kotlin. <br><br>
+The app is build using state management BLoC.
